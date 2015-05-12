@@ -19,7 +19,7 @@
 <p>URL 相比 URI 增加了从何处获取资源的位置信息，这也是其中 Locator 的本意。</p>
 <p><code>http://miui.com</code> 是 URL，而 <code>miui.com</code> 就不是了，因为没有指定 scheme，<code>mailto:hr@xiaomi.com</code> 也不是 URL，因为在其中并不包括具体的资源位置信息，但它是一个合法的 URI。</p>
 <hr>
-<h3 id="URN_(Uniform_Resource_Name)">URN (Uniform Resource Name)</h3><p>除 URL，URI 中还包括 URN，一种通过命名空间来表示资源（而非位置）的表示法。<br>URN 的定义：<code>urn: namespance-identifier : namespance-specific-string</code>。</p>
+<h3 id="URN_(Uniform_Resource_Name)">URN (Uniform Resource Name)</h3><p>除 URL，URI 中还包括 URN，一种通过命名空间来表示资源（而非位置）的表示法。<br>URN 的定义：<code>urn: namespance-identifier : namespace-specific-string</code>。</p>
 <p>从维基百科拿来的例子：<br><code>urn:isbn:0451450523</code>: 《<a href="http://en.wikipedia.org/wiki/The_Last_Unicorn" target="_blank" rel="external">The Last Unicorn</a>》这本书的资源名称</p>
 </div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/Android/" class="post__tag__link">Android</a></li><li class="post__tag__item"><a href="/tags/HTTP/" class="post__tag__link">HTTP</a></li></ul><a href="/2015/05/11/http-essentials-for-android-uri-vs-url/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><article class="post"><header class="post__head"><time datetime="2015-05-08T06:16:56.000Z" class="post__time">May 8, 2015</time><h1 class="post__title"><a href="/2015/05/08/make-it-stick-outline/"></a></h1></header><div class="post__main echo"><h2 id="《make_it_stick:_The_Science_of_Successful_Learning》读书笔记">《make it stick: The Science of Successful Learning》读书笔记</h2><blockquote>
 <p>Memory is the mother of all wisdom</p>
@@ -47,19 +47,4 @@
 <li>复述（elaboration）可以让你更好地掌握新的知识：将学习到的新知识和旧有的知识进行连接，并通过你自己的话来复述。新旧知识的关联越多，对其的记忆也就越牢固</li>
 <li>将新知识放到更大的语境中有益于学习，比如碰到一个故事的时候将它与你对人类意志和命运不公的理解联系在一起。</li>
 </ul>
-</div><footer class="post__foot u-cf"><a href="/2015/05/08/make-it-stick-outline/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><article class="post"><header class="post__head"><time datetime="2015-05-03T02:06:38.000Z" class="post__time">May 3, 2015</time><h1 class="post__title"><a href="/2015/05/03/real-world-http/">Real world HTTP for Android</a></h1></header><div class="post__main echo"><h3 id="URL_与_URI">URL 与 URI</h3><p>URI 是 URL 的超集。<br>比如这四个例子：</p>
-<ol>
-<li><a href="http://bbs.miui.com" target="_blank" rel="external">http://bbs.miui.com</a></li>
-<li>tel:18612345678</li>
-<li>mailto:hr@xiaomi.com</li>
-<li>file:///etc/hosts</li>
-</ol>
-<p>1～4 都属于 URI，但是只有 1 和 4 属于 URL。</p>
-<p>URI 的定义：<code>&lt;scheme name&gt; : &lt;hierarchical part&gt; [ ? &lt;query&gt; ] [ # &lt;fragment&gt; ]</code><br>其中 <code>&lt;hierarchical part&gt;</code> 如果以 “//“ 开头，则其包括 authority 和 path 两部分，反之则只包含 path。</p>
-<ul>
-<li>URI: <strong>U</strong>niform <strong>R</strong>esource <strong>I</strong>dentifier</li>
-<li>URL: <strong>U</strong>niform <strong>R</strong>esource <strong>L</strong>ocator</li>
-<li>URN: <strong>U</strong>niform <strong>R</strong>esource <strong>N</strong>ame</li>
-</ul>
-<h3 id="All_about_RESOURCE">All about RESOURCE</h3><h3 id="HTTP_header_解析">HTTP header 解析</h3><h3 id="常见的_Status_code">常见的 Status code</h3><p>204 Captive Portal<br>304 Cache related<br>302, 303, 307 redirection<br>401 Auth<br>405 Method Not Allowed<br>502 504 Gateway related, diff with proxy<br>Ranged request</p>
-</div><footer class="post__foot u-cf"><a href="/2015/05/03/real-world-http/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2015 Xudong WU</div><menu class="page-menu u-fr"><li class="page-menu__item"><span title="Previous" class="page-menu__link icon-arrow-left page-menu__link--disabled"></span></li><li class="page-menu__item"><span title="Next" class="page-menu__link icon-arrow-right page-menu__link--disabled"></span></li></menu></footer></body></html>
+</div><footer class="post__foot u-cf"><a href="/2015/05/08/make-it-stick-outline/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2015 Xudong WU</div><menu class="page-menu u-fr"><li class="page-menu__item"><span title="Previous" class="page-menu__link icon-arrow-left page-menu__link--disabled"></span></li><li class="page-menu__item"><span title="Next" class="page-menu__link icon-arrow-right page-menu__link--disabled"></span></li></menu></footer></body></html>
